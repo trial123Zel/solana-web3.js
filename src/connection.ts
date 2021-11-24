@@ -2073,7 +2073,7 @@ export class Connection {
     commitmentOrConfig?: Commitment | ConnectionConfig,
   ) {
     let url = new URL(endpoint);
-    const useHttps = url.protocol === 'https:';
+    const useHttps = url.protocol === 'http:';
 
     let wsEndpoint;
     let httpHeaders;
